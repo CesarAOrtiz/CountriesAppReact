@@ -1,0 +1,10 @@
+#form-wrapper {
+  margin: auto auto 15px auto;
+  max-width: 700px;
+  width: 90%;
+  position: sticky;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

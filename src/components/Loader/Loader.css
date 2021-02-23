@@ -1,0 +1,24 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 120px);
+}
+
+.spinner svg {
+  stroke: rgba(0, 0, 0, 0.4);
+  stroke-width: 7px;
+  fill: none;
+  stroke-dasharray: 100%;
+  stroke-linecap: round;
+  animation: 0.86s cubic-bezier(0.4, 0.15, 0.6, 0.85) infinite spinnerAnimation;
+}
+
+@keyframes spinnerAnimation {
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

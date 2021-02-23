@@ -1,0 +1,13 @@
+.flag-img {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+
+@supports (object-fit: cover) {
+  .flag-img {
+    height: 50%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
