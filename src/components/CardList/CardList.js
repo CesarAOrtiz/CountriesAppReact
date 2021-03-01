@@ -19,21 +19,14 @@ function CardList(props) {
           (parseInt(window.getComputedStyle(cell).width, 10) + cellMargin),
         10
       );
-      /*
-        let space = parseInt(
-        section.clientWidth /
-          (cell.getBoundingClientRect().width),
-        10
-      );
-      */
       grid.style.gridTemplateColumns = `repeat(${space}, 1fr)`;
     }
   };
 
   const list = (data, click) => {
-    return data
-      .slice(0, 5)
-      .map((obj) => <Card key={obj.name} element={obj} clickHandler={click} />);
+    return data.map((obj) => (
+      <Card key={obj.name} element={obj} clickHandler={click} />
+    ));
   };
 
   const { data, clickHandler } = props;
